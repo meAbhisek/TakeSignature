@@ -7,7 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "SigVC.h"
 
-@interface TakeSignature : NSObject
+@protocol TakeSignatureDelegate;
+
+@interface TakeSignature : NSObject <SigProtocol>
+
+@property (nonatomic, weak) id <TakeSignatureDelegate> takeSignatureDelegate;
+
+-(void)showTheSignatureView;
+
+@end
+
+@protocol TakeSignatureDelegate <NSObject>
+
+@optional
+
+-(void)showTheSignatureVC:(SigVC*)vObj;
+-(void)returenTheSignatureImage:(UIImage*)sigImage;
 
 @end

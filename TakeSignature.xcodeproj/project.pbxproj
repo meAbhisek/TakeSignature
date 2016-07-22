@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3F12B9881C46339F0021CB01 /* TakeSignature.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F12B9871C46339F0021CB01 /* TakeSignature.h */; };
 		3F12B98A1C46339F0021CB01 /* TakeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F12B9891C46339F0021CB01 /* TakeSignature.m */; };
+		3F12B9921C4633CF0021CB01 /* SigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F12B9911C4633CF0021CB01 /* SigVC.m */; };
+		3F12B9951C4659FA0021CB01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F12B9941C4659FA0021CB01 /* UIKit.framework */; };
+		3FD04FF31C47AAEE0051A4D8 /* SigVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F12B9901C4633CF0021CB01 /* SigVC.h */; };
+		3FD04FFE1C47ABD00051A4D8 /* SigVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12B9931C4634610021CB01 /* SigVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +22,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				3FD04FF31C47AAEE0051A4D8 /* SigVC.h in CopyFiles */,
 				3F12B9881C46339F0021CB01 /* TakeSignature.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,10 +33,24 @@
 		3F12B9841C46339F0021CB01 /* libTakeSignature.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTakeSignature.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F12B9871C46339F0021CB01 /* TakeSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakeSignature.h; sourceTree = "<group>"; };
 		3F12B9891C46339F0021CB01 /* TakeSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeSignature.m; sourceTree = "<group>"; };
+		3F12B9901C4633CF0021CB01 /* SigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigVC.h; sourceTree = "<group>"; };
+		3F12B9911C4633CF0021CB01 /* SigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigVC.m; sourceTree = "<group>"; };
+		3F12B9931C4634610021CB01 /* SigVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SigVC.storyboard; sourceTree = "<group>"; };
+		3F12B9941C4659FA0021CB01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FD04FF81C47ABC00051A4D8 /* TakeSignatureLibraryResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeSignatureLibraryResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD04FFA1C47ABC00051A4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3F12B9811C46339F0021CB01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F12B9951C4659FA0021CB01 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD04FF51C47ABC00051A4D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +63,9 @@
 		3F12B97B1C46339F0021CB01 = {
 			isa = PBXGroup;
 			children = (
+				3F12B9941C4659FA0021CB01 /* UIKit.framework */,
 				3F12B9861C46339F0021CB01 /* TakeSignature */,
+				3FD04FF91C47ABC00051A4D8 /* TakeSignatureLibraryResources */,
 				3F12B9851C46339F0021CB01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3F12B9841C46339F0021CB01 /* libTakeSignature.a */,
+				3FD04FF81C47ABC00051A4D8 /* TakeSignatureLibraryResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +84,19 @@
 			children = (
 				3F12B9871C46339F0021CB01 /* TakeSignature.h */,
 				3F12B9891C46339F0021CB01 /* TakeSignature.m */,
+				3F12B9901C4633CF0021CB01 /* SigVC.h */,
+				3F12B9911C4633CF0021CB01 /* SigVC.m */,
+				3F12B9931C4634610021CB01 /* SigVC.storyboard */,
 			);
 			path = TakeSignature;
+			sourceTree = "<group>";
+		};
+		3FD04FF91C47ABC00051A4D8 /* TakeSignatureLibraryResources */ = {
+			isa = PBXGroup;
+			children = (
+				3FD04FFA1C47ABC00051A4D8 /* Info.plist */,
+			);
+			path = TakeSignatureLibraryResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +119,23 @@
 			productReference = 3F12B9841C46339F0021CB01 /* libTakeSignature.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		3FD04FF71C47ABC00051A4D8 /* TakeSignatureLibraryResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD04FFB1C47ABC00051A4D8 /* Build configuration list for PBXNativeTarget "TakeSignatureLibraryResources" */;
+			buildPhases = (
+				3FD04FF41C47ABC00051A4D8 /* Sources */,
+				3FD04FF51C47ABC00051A4D8 /* Frameworks */,
+				3FD04FF61C47ABC00051A4D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeSignatureLibraryResources;
+			productName = TakeSignatureLibraryResources;
+			productReference = 3FD04FF81C47ABC00051A4D8 /* TakeSignatureLibraryResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,9 @@
 				ORGANIZATIONNAME = "User-81-Mac";
 				TargetAttributes = {
 					3F12B9831C46339F0021CB01 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3FD04FF71C47ABC00051A4D8 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,16 +166,36 @@
 			projectRoot = "";
 			targets = (
 				3F12B9831C46339F0021CB01 /* TakeSignature */,
+				3FD04FF71C47ABC00051A4D8 /* TakeSignatureLibraryResources */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FD04FF61C47ABC00051A4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD04FFE1C47ABD00051A4D8 /* SigVC.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F12B9801C46339F0021CB01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F12B9921C4633CF0021CB01 /* SigVC.m in Sources */,
 				3F12B98A1C46339F0021CB01 /* TakeSignature.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD04FF41C47ABC00051A4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +285,13 @@
 		3F12B98E1C46339F0021CB01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -221,9 +301,62 @@
 		3F12B98F1C46339F0021CB01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FD04FFC1C47ABC00051A4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TakeSignatureLibraryResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cyber-swift.TakeSignatureLibraryResources";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3FD04FFD1C47ABC00051A4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TakeSignatureLibraryResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cyber-swift.TakeSignatureLibraryResources";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -244,6 +377,15 @@
 			buildConfigurations = (
 				3F12B98E1C46339F0021CB01 /* Debug */,
 				3F12B98F1C46339F0021CB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD04FFB1C47ABC00051A4D8 /* Build configuration list for PBXNativeTarget "TakeSignatureLibraryResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD04FFC1C47ABC00051A4D8 /* Debug */,
+				3FD04FFD1C47ABC00051A4D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
