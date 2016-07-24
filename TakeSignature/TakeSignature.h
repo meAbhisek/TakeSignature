@@ -2,7 +2,7 @@
 //  TakeSignature.h
 //  TakeSignature
 //
-//  Created by User-81-Mac on 13/01/16.
+//  Created by Abhisek Kumar Singh on 13/01/16.
 //  Copyright © 2016 Abhisek Kumar Singh. All rights reserved.
 //
 

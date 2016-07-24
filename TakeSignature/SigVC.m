@@ -2,8 +2,8 @@
 //  SigVC.m
 //  TempSignatureCode
 //
-//  Created by User-81-Mac on 13/01/16.
-//  Copyright © 2016 User-81-Mac. All rights reserved.
+//  Created by Abhisek Kumar Singh on 13/01/16.
+//  Copyright © 2016 Abhisek Kumar Singh. All rights reserved.
 //
 
 #import "SigVC.h"
